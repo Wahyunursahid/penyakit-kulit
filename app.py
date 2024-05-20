@@ -59,7 +59,7 @@ def diagnose_diseases(symptoms, user_responses):
 def main():
     st.title("Sistem Diagnosa Penyakit Kulit Manusia")
 
-    st.write("Masukan Nilai Kepastian Gejala Anda")
+    st.write("Masukan Nilai Kepastian Gejala yang Anda Rasakan : ")
     st.write("0 - Tidak")
     st.write("0.2 - Tidak Yakin")
     st.write("0.4 - Sedikit Yakin")
