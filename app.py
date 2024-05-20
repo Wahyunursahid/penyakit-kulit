@@ -57,9 +57,9 @@ def diagnose_diseases(symptoms, user_responses):
 
 # Streamlit app
 def main():
-    st.title("Disease Diagnosis System")
+    st.title("Sistem Diagnosa Penyakit Kulit Manusia")
 
-    st.write("Please rate your certainty for the following symptoms on a scale:")
+    st.write("Masukan Nilai Kepastian Gejala Anda")
     st.write("0 - Tidak")
     st.write("0.2 - Tidak Yakin")
     st.write("0.4 - Sedikit Yakin")
@@ -71,7 +71,7 @@ def main():
     for code, symptom_info in symptoms.items():
         user_responses[code] = st.slider(f"{code}: {symptom_info['description']} (0 to 1):", 0.0, 1.0, 0.0, 0.2)
 
-    if st.button("Diagnose"):
+    if st.button("Diagnosa Sekarang"):
         disease_results = diagnose_diseases(symptoms, user_responses)
         st.write("\n### Disease Diagnostic Results:")
         for disease, score in disease_results.items():
