@@ -91,7 +91,7 @@ def main():
 
     if st.button("Diagnosa Sekarang"):
         disease_results = diagnose_diseases(symptoms, user_responses)
-        st.write("\n### Kemungkinan Persentase Anda Mengidap Penyakit Kulit :")
+        st.write("\n### Persentase Anda Mengidap Penyakit Kulit :")
         for disease, score in disease_results.items():
             st.write(f"{disease}: {score * 100:.2f}%")
 
