@@ -5,7 +5,7 @@ def add_bg_from_url():
         f"""
         <style>
         .stApp {{
-            background-image: url("https://github.com/Wahyunursahid/penyakit-kulit/blob/7609d3d7883aa25e6f01fbb3ad5438fe8785db3a/background.jpg");
+            background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flovepik.com%2Fimages%2Fbackgrounds-pemeriksaan-kesehatan.html&psig=AOvVaw1qRAUFUyTPtzOh8GWjjPpj&ust=1716271886263000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDMnpPJm4YDFQAAAAAdAAAAABAE");
             background-size: cover;
         }}
         </style>
