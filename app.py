@@ -1,22 +1,22 @@
 import streamlit as st
 
-# Function to apply custom CSS for background image
-def set_bg_img(url):
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("{url}");
-            background-size: cover;
-            background-position: center;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+# # Function to apply custom CSS for background image
+# def set_bg_img(url):
+#     st.markdown(
+#         f"""
+#         <style>
+#         .stApp {{
+#             background-image: url("{url}");
+#             background-size: cover;
+#             background-position: center;
+#         }}
+#         </style>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
-# Use this function at the top of your main Streamlit script
-set_bg_img("https://th.bing.com/th/id/OIP.dxNchr1F7Gf3oOxx64ALvAHaDt?w=349&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7")  # Replace with your actual image URL
+# # Use this function at the top of your main Streamlit script
+# set_bg_img("https://th.bing.com/th/id/OIP.dxNchr1F7Gf3oOxx64ALvAHaDt?w=349&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7")  # Replace with your actual image URL
 
 # Define symptoms and their associated diseases with expert CF values
 symptoms = {
