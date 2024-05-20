@@ -91,9 +91,9 @@ def main():
 
     if st.button("Diagnosa Sekarang"):
         disease_results = diagnose_diseases(symptoms, user_responses)
-        st.write("\n### Disease Diagnostic Results:")
+        st.write("\n### Kemungkinan Persentase Anda Mengidap Penyakit Kulit :")
         for disease, score in disease_results.items():
-            st.write(f"{disease}: {score * 100:.2f}% certainty level")
+            st.write(f"{disease}: {score * 100:.2f}%")
 
 if __name__ == "__main__":
     main()
