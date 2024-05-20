@@ -1,5 +1,18 @@
 import streamlit as st
 
+def add_bg_from_url():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("background.jpg");
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 # Define symptoms and their associated diseases with expert CF values
 symptoms = {
     "GJ01": {"description": "Gatal pada kulit dibagian area kulit yang kemerahan", "diseases": {"Eksim": 0.2}},
