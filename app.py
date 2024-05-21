@@ -62,9 +62,9 @@ def diagnose_diseases(symptoms, user_responses):
 
 # Streamlit app
 def main():
-    st.title("Disease Diagnosis System")
+    st.title("Sistem Diagnosa Penyakit Kulit Manusia")
 
-    st.write("Please rate your certainty for the following symptoms on a scale:")
+    st.write("Masukan Skala Keyakinan Pada Gejala Anda:")
     st.write("0 - Tidak")
     st.write("0.2 - Tidak Yakin")
     st.write("0.4 - Sedikit Yakin")
@@ -78,9 +78,9 @@ def main():
 
     if st.button("Diagnose"):
         disease_results = diagnose_diseases(symptoms, user_responses)
-        st.write("\n### Disease Diagnostic Results:")
+        st.write("\n### Hasil Diagnosa :")
         for disease, score in disease_results.items():
-            st.write(f"{disease}: {score * 100:.2f}% certainty level")
+            st.write(f"{disease}: {score * 100:.2f}% ")
 
 if __name__ == "__main__":
     main()
