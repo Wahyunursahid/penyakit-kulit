@@ -76,7 +76,7 @@ def main():
     for code, symptom_info in symptoms.items():
         user_responses[code] = st.slider(f"{code}: {symptom_info['description']} (0 to 1):", 0.0, 1.0, 0.0, 0.2)
 
-    if st.button("Diagnose"):
+    if st.button("Diagnosa Sekarang"):
         disease_results = diagnose_diseases(symptoms, user_responses)
         st.write("\n### Hasil Diagnosa :")
         for disease, score in disease_results.items():
